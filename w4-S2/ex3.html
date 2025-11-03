@@ -1,0 +1,96 @@
+
+<style>
+    body{
+        background-color: whitesmoke;
+        padding: 1rem;
+        color: white;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        gap:1rem;
+    }
+    header,footer{
+        
+        padding: 1rem;
+        background-color: #1e90ff;
+        border: solid  #0077ea;
+        border-radius: 0.5rem;
+    }
+    .middle{
+        display: flex;
+        flex-direction: row;
+        flex-grow:1;
+        gap:1rem;
+    }
+   
+    main{
+        display: flex;
+        flex-direction: column ;
+        flex-grow:1;
+        padding: 1rem;
+        background-color:#3cb371 ;
+        border: 3px solid #2f8d59;
+        border-radius: 0.5rem;
+        
+        
+    }
+    nav{
+        flex: 0  10rem;
+        padding: 1rem;
+        background-color:#ff6347 ;
+        border: 3px solid #e02200;
+        border-radius: 0.5rem;
+         }
+    .items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 0.5rem;
+        
+    }
+    
+    .item{
+       
+        padding: 15px 35px;
+        background-color: #2f8d59;
+        border: 3px solid  #226741;
+        border-radius: 0.5rem;
+         
+    }
+    .main_title{
+        margin-bottom: 1rem;
+        
+    }
+  
+</style>
+  </head>
+  <body>
+    <div class="container">
+      <header>Header</header>
+      <div class="middle">
+        <main>
+            <div class="main_title">main</div>
+            <div class="items">
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+              
+            </div>
+            
+        </main>
+        <nav>sidbar</nav>
+ 
+      </div>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
