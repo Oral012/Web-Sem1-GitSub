@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Dashboard</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="dashboard">
+      <section class="left-column">
+        <header class="navbar">
+          <div class="navbar-left">
+            <div class="logo">
+              <img src="image/logo.png" alt="logo" />
+            </div>
+            <div class="welcome-text">
+              <h1>Welcome</h1>
+              <p>Your personal dashboard overview</p>
+            </div>
+          </div>
+          <div class="navbar-right">
+            <div class="search-bar">
+              <span class="material-icons search-icon">search</span>
+              <input type="text" placeholder="Search" />
+            </div>
+            <button class="settings-button">
+              <span class="material-icons">settings</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="left-content-area">
+          <div class="card profile-card">
+            <div class="card-header">
+              <h2 class="card-title">Profile</h2>
+            </div>
+            <div class="profile-details">
+              <div class="avatar">
+                <img src="image/profile.gif" alt="Itashi" />
+              </div>
+              <h3 class="name">Itachi vi Britannia</h3>
+              <p class="role">Ramen-Ya-San</p>
+              <div class="stats-badges">
+                <span class="badge">
+                  <span class="material-icons">group</span> 11
+                </span>
+                <span class="badge">
+                  <span class="material-icons">check_circle</span> 56
+                </span>
+                <span class="badge">
+                  <span class="material-icons">local_fire_department</span> 12
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tasks-wrapper">
+            <div class="card task-card prioritized-tasks">
+              <div class="card-header">
+                <h2 class="card-title">Prioritized<br />tasks</h2>
+                <div class="task-icon">
+                  <span class="material-icons">timer</span>
+                </div>
+              </div>
+              <div class="task-progress">
+                <p class="percentage">83%</p>
+                <p class="subtitle">Avg. Completed</p>
+              </div>
+            </div>
+
+            <div class="card task-card additional-tasks">
+              <div class="card-header">
+                <h2 class="card-title">Additional<br />tasks</h2>
+                <div class="task-icon">
+                  <span class="material-icons">rule</span>
+                </div>
+              </div>
+              <div class="task-progress">
+                <p class="percentage">56%</p>
+                <p class="subtitle">Avg. Completed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="right-column">
+        <div class="card meetings-card">
+          <h2 class="card-title">My meetings</h2>
+          <ul class="m-list">
+            <li class="meeting-item">
+              <div class="meeting-date-time">
+                <span class="meeting-day">Tue, 11 Jul</span>
+                <span class="meeting-time">08:15 am</span>
+              </div>
+              <div class="meeting-details">
+                <p class="meeting-title">Quick Daily Meeting</p>
+                <div class="meeting-platform">
+                  <span class="material-icons platform-icon">videocam</span>
+                  <span>Zoom</span>
+                </div>
+              </div>
+            </li>
+            <li class="meeting-item">
+              <div class="meeting-date-time">
+                <span class="meeting-day">Tue, 11 Jul</span>
+                <span class="meeting-time">09:30 pm</span>
+              </div>
+              <div class="meeting-details">
+                <p class="meeting-title">John Onboarding</p>
+                <div class="meeting-platform">
+                  <span class="material-icons platform-icon">videocam</span>
+                  <span>Google Meet</span>
+                </div>
+              </div>
+            </li>
+            <li class="meeting-item">
+              <div class="meeting-date-time">
+                <span class="meeting-day">Tue, 12 Jul</span>
+                <span class="meeting-time">02:30 pm</span>
+              </div>
+              <div class="meeting-details">
+                <p class="meeting-title">Call With a New Team</p>
+                <div class="meeting-platform">
+                  <span class="material-icons platform-icon">videocam</span>
+                  <span>Zoom</span>
+                </div>
+              </div>
+            </li>
+            <li class="meeting-item">
+              <div class="meeting-date-time">
+                <span class="meeting-day">Tue, 15 Jul</span>
+                <span class="meeting-time">04:00 pm</span>
+              </div>
+              <div class="meeting-details">
+                <p class="meeting-title">Lead Designers Event</p>
+                <div class="meeting-platform">
+                  <span class="material-icons platform-icon">videocam</span>
+                  <span>Google Meet</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="see-all-btn">See all meetings →</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
