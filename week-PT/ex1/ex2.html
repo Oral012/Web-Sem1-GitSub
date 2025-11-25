@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+
+
+    .navbar {
+      background-color: #333333;
+      color: #ffffff;
+      height: 80px;
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: #e0e0e0;
+      font-size: 14px;
+    }
+
+    .menu-icon {
+      display: none;        
+      width: 30px;
+      height: 20px;
+      position: relative;
+    }
+
+    .menu-icon span {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: #ffffff;
+      border-radius: 2px;
+    }
+
+    .menu-icon span:nth-child(1) { top: 0; }
+    .menu-icon span:nth-child(2) { top: 8px; }
+    .menu-icon span:nth-child(3) { top: 16px; }
+
+    @media (max-width: 768px) {
+
+      .links {
+        display: none;  
+      }
+       .menu-icon {
+        display: block;  
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Logo</div>
+
+    <ul class="links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</body>
+</html>

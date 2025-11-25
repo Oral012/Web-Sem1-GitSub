@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    .wrapper {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   
+    }
+
+    .box {
+      background: #87e0ac;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: 3px;
+      width: clamp(150px, 50vw, 350px);
+      height: clamp(50px, 50vw, 150px);
+    }
+
+    .box .big {
+      font-size: 50px;
+    }
+
+    .box .small {
+      display: none;
+    }
+
+    @media (max-width: 320px) {
+      .box {
+        background-color: red;
+        width: clamp(150px, 50vw, 250px);
+      height: clamp(50px, 50vw, 50px);
+      }
+
+      .box .small {
+        display: block;  
+        font-size: 15px;
+      }
+
+      .box .big {
+        display: none;     
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="box">
+      <span class="small">Im small 🥶</span>
+      <span class="big">Im big 😎</span>
+    </div>
+  </div>
+</body>
+</html>

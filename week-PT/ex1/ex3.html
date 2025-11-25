@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+
+    .page-wrapper {
+      width: 100%;
+      padding: 20px;
+    }
+
+    header,footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 1rem;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;  
+      gap: 10px;
+      margin: 10px 0;
+    }
+
+    .content,.sidebar {
+      background-color: #e6e6e6;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @media (min-width: 600px) and (max-width: 899px) {
+      main {
+        flex-direction: row;
+      }
+
+      .content,.sidebar {
+        flex: 1 1;
+      }
+
+      header,footer {
+        font-size: 1.1rem;
+        padding: 18px;
+      }
+    }
+
+    @media (min-width: 900px) {
+      main {
+        flex-direction: row;
+      }
+
+      .content {
+        flex: 3;  
+      }
+
+      .sidebar {
+        flex: 1;  
+      }
+      header,footer {
+        font-size: 1.2rem;
+        padding: 35px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>Responsive Header</header>
+
+    <main>
+      <section class="content">Main Content Area</section>
+      <aside class="sidebar">Sidebar</aside>
+    </main>
+
+    <footer>Footer</footer>
+  </div>
+</body>
+</html>
